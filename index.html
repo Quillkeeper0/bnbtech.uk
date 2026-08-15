@@ -1,962 +1,2868 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BNB Technology Group UK | BNBTech.uk</title>
-    <meta name="description" content="BNB Technology Group UK — technology and connectivity services.">
+<title>BNB Tech | Zapnix Cellular & Internet</title>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<meta
+name="description"
+content="BNB Tech — technology and connectivity services. Zapnix provides cellular and internet connectivity."
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+<meta name="theme-color" content="#020617">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+brand: {
+400: '#2dd4bf',
+500: '#14b8a6',
+600: '#0d9488'
+}
+}
+}
+}
+}
+</script>
+
+<style>
+html {
+scroll-behavior: smooth;
+}
+
+body {
+min-height: 100vh;
+}
+
+input,
+select,
+textarea {
+color-scheme: dark;
+}
+</style>
 </head>
+
 
 <body class="bg-slate-950 text-slate-100 antialiased">
 
-    <!-- =========================================================
-         NAVIGATION
-    ========================================================== -->
-    <header class="sticky top-0 z-50 border-b border-slate-800/80
-                   bg-slate-950/85 backdrop-blur-md">
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
-                    h-16 flex items-center justify-between">
-
-            <!-- Logo -->
-            <a href="#home"
-               class="font-black tracking-tight text-xl text-white">
-                bnb<span class="text-brand-400">tech</span><span
-                    class="text-xs text-slate-500 font-mono">.uk</span>
-            </a>
-
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center gap-8
-                        text-sm font-medium text-slate-300">
-
-                <a href="#services"
-                   class="hover:text-brand-400 transition">
-                    Services
-                </a>
-
-                <a href="#legal"
-                   class="hover:text-brand-400 transition">
-                    Terms & Privacy
-                </a>
-
-                <a href="#support"
-                   class="hover:text-brand-400 transition">
-                    Support
-                </a>
-            </nav>
-
-            <!-- Support Button -->
-            <a href="mailto:Zapnix@att.net?subject=BNBTech.uk%20Support"
-               class="inline-flex items-center justify-center
-                      px-4 py-2 rounded-lg text-sm font-semibold
-                      text-slate-950 bg-brand-400
-                      hover:bg-brand-500 transition">
-                Get Support
-            </a>
-
-        </div>
-    </header>
-
-
-    <!-- =========================================================
-         HERO
-    ========================================================== -->
-    <main id="home">
-
-        <section class="relative overflow-hidden
-                        border-b border-slate-800/80">
-
-            <!-- Background glow -->
-            <div class="absolute inset-0 pointer-events-none
-                        bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-                        from-teal-900/30 via-slate-950 to-slate-950">
-            </div>
-
-            <div class="relative z-10 max-w-5xl mx-auto
-                        px-4 sm:px-6 lg:px-8
-                        py-28 sm:py-36 text-center">
-
-                <!-- Technical label -->
-                <div class="inline-flex items-center gap-2
-                            px-3 py-1.5 rounded-full
-                            border border-brand-500/20
-                            bg-brand-500/10
-                            text-brand-400
-                            text-xs font-mono uppercase tracking-widest">
-
-                    <span class="w-1.5 h-1.5 rounded-full
-                                 bg-brand-400 animate-pulse">
-                    </span>
-
-                    BNB Technology Group UK
-                </div>
-
-                <h1 class="mt-7 text-4xl sm:text-6xl lg:text-7xl
-                           font-black tracking-tight text-white
-                           leading-tight">
-
-                    Technology that
-                    <span class="text-brand-400">keeps you connected.</span>
-
-                </h1>
-
-                <p class="mt-6 max-w-2xl mx-auto
-                          text-lg sm:text-xl
-                          text-slate-400 leading-relaxed">
-
-                    Building practical technology and connectivity
-                    services for modern users.
-
-                </p>
-
-                <div class="mt-10 flex flex-col sm:flex-row
-                            justify-center gap-4">
-
-                    <a href="#services"
-                       class="px-7 py-3.5 rounded-xl
-                              font-semibold text-slate-950
-                              bg-brand-400 hover:bg-brand-500
-                              transition shadow-lg
-                              shadow-brand-500/10">
-
-                        Explore Services
-                    </a>
-
-                    <button
-                       type="button"
-                       onclick="openLegalModal()"
-                       class="px-7 py-3.5 rounded-xl
-                              font-semibold text-slate-300
-                              bg-slate-900 hover:bg-slate-800
-                              border border-slate-700
-                              transition">
-
-                        Terms & Privacy
-                    </button>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- =====================================================
-             SERVICES
-        ====================================================== -->
-        <section id="services"
-                 class="py-24 border-b border-slate-800/80">
-
-            <div class="max-w-7xl mx-auto
-                        px-4 sm:px-6 lg:px-8">
-
-                <div class="mb-12">
-
-                    <p class="text-brand-400 font-mono text-xs
-                              uppercase tracking-widest">
-                        Our Services
-                    </p>
-
-                    <h2 class="mt-2 text-3xl sm:text-4xl
-                               font-black text-white">
-                        Connectivity
-                    </h2>
 
-                    <p class="mt-4 max-w-2xl
-                              text-slate-400 text-lg">
-                        Simple connectivity services without unnecessary
-                        complexity.
-                    </p>
+<!-- =========================================================
+NAVIGATION
+========================================================== -->
 
-                </div>
+<header class="sticky top-0 z-50 border-b border-slate-800/80
+bg-slate-950/85 backdrop-blur-md">
 
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+h-16 flex items-center justify-between">
 
-                <!-- Zapnix Card -->
-                <div class="max-w-4xl">
+<!-- Logo -->
 
-                    <div class="group relative overflow-hidden
-                                rounded-3xl
-                                border border-slate-800
-                                bg-slate-900/70
-                                p-8 sm:p-10
-                                hover:border-brand-500/40
-                                transition">
+<a
+href="#home"
+class="font-black tracking-tight text-xl text-white">
 
-                        <!-- Glow -->
-                        <div class="absolute -right-24 -top-24
-                                    w-64 h-64
-                                    bg-brand-500/10
-                                    blur-3xl rounded-full
-                                    pointer-events-none">
-                        </div>
+bnb<span class="text-brand-400">tech</span><span
+class="text-xs text-slate-500 font-mono">.uk</span>
 
-                        <div class="relative z-10">
+</a>
 
-                            <div class="flex flex-col sm:flex-row
-                                        sm:items-start
-                                        sm:justify-between gap-6">
 
-                                <div>
+<!-- Desktop Navigation -->
 
-                                    <div class="flex items-center gap-3">
+<nav class="hidden md:flex items-center gap-8
+text-sm font-medium text-slate-300">
 
-                                        <span class="inline-flex
-                                                     items-center
-                                                     px-2.5 py-1
-                                                     rounded-full
-                                                     bg-brand-500/10
-                                                     border
-                                                     border-brand-500/20
-                                                     text-brand-400
-                                                     text-xs
-                                                     font-mono
-                                                     uppercase">
-                                            Zapnix
-                                        </span>
+<a
+href="#services"
+class="hover:text-brand-400 transition">
 
-                                        <span class="text-slate-500
-                                                     text-xs font-mono">
-                                            COMMUNICATIONS
-                                        </span>
+Services
 
-                                    </div>
+</a>
 
-                                    <h3 class="mt-5 text-3xl
-                                               font-black text-white">
-                                        Mobile Hotspot Connectivity
-                                    </h3>
+<a
+href="#trial"
+class="hover:text-brand-400 transition">
 
-                                    <p class="mt-3 max-w-xl
-                                              text-slate-400
-                                              leading-relaxed">
+Free Trial
 
-                                        Straightforward mobile hotspot
-                                        connectivity for supported users
-                                        in the United States.
+</a>
 
-                                    </p>
+<a
+href="#legal"
+class="hover:text-brand-400 transition">
 
-                                </div>
+Legal
 
+</a>
 
-                                <!-- Price -->
-                                <div class="shrink-0">
+<a
+href="#support"
+class="hover:text-brand-400 transition">
 
-                                    <div class="text-3xl font-black
-                                                text-white">
-                                        $1.00
-                                    </div>
-
-                                    <div class="text-xs
-                                                text-slate-500
-                                                font-mono">
-                                        / 30 DAYS
-                                    </div>
-
-                                </div>
+Support
 
-                            </div>
+</a>
 
+</nav>
 
-                            <!-- Features -->
-                            <div class="mt-8 grid sm:grid-cols-3
-                                        gap-3">
 
-                                <div class="rounded-xl
-                                            border border-slate-800
-                                            bg-slate-950/60
-                                            p-4">
+<!-- Support -->
 
-                                    <div class="text-brand-400
-                                                font-mono text-xs">
-                                        DATA
-                                    </div>
+<button
+type="button"
+onclick="openSupportModal()"
+class="inline-flex items-center justify-center
+px-4 py-2 rounded-lg text-sm font-semibold
+text-slate-950 bg-brand-400
+hover:bg-brand-500 transition">
 
-                                    <div class="mt-1 font-semibold
-                                                text-white">
-                                        Unlimited
-                                    </div>
+Get Support
 
-                                </div>
+</button>
 
+</div>
 
-                                <div class="rounded-xl
-                                            border border-slate-800
-                                            bg-slate-950/60
-                                            p-4">
+</header>
 
-                                    <div class="text-brand-400
-                                                font-mono text-xs">
-                                        SPEED
-                                    </div>
 
-                                    <div class="mt-1 font-semibold
-                                                text-white">
-                                        Up to 5 Mbps
-                                    </div>
 
-                                </div>
+<!-- =========================================================
+MAIN
+========================================================== -->
 
+<main id="home">
 
-                                <div class="rounded-xl
-                                            border border-slate-800
-                                            bg-slate-950/60
-                                            p-4">
 
-                                    <div class="text-brand-400
-                                                font-mono text-xs">
-                                        BILLING
-                                    </div>
+<!-- =========================================================
+HERO
+========================================================== -->
 
-                                    <div class="mt-1 font-semibold
-                                                text-white">
-                                        Every 30 days
-                                    </div>
+<section
+class="relative overflow-hidden
+border-b border-slate-800/80">
 
-                                </div>
+<!-- Background glow -->
 
-                            </div>
+<div
+class="absolute inset-0 pointer-events-none
+bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+from-teal-900/30 via-slate-950 to-slate-950">
+</div>
 
 
-                            <!-- CTA -->
-                            <div class="mt-8 flex flex-col
-                                        sm:flex-row gap-3">
+<div
+class="relative z-10 max-w-5xl mx-auto
+px-4 sm:px-6 lg:px-8
+py-28 sm:py-36 text-center">
 
-                                <a href="mailto:Zapnix@att.net?subject=Zapnix%20Hotspot%20Subscription"
-                                   class="inline-flex
-                                          justify-center
-                                          px-6 py-3 rounded-xl
-                                          font-semibold
-                                          text-slate-950
-                                          bg-brand-400
-                                          hover:bg-brand-500
-                                          transition">
-
-                                    Subscribe / Inquire
-                                </a>
-
-                                <button
-                                   type="button"
-                                   onclick="openLegalModal()"
-                                   class="inline-flex
-                                          justify-center
-                                          px-6 py-3 rounded-xl
-                                          font-semibold
-                                          text-slate-300
-                                          border border-slate-700
-                                          bg-slate-950
-                                          hover:bg-slate-900
-                                          transition">
 
-                                    View Terms & Privacy
-                                </button>
+<!-- Company label -->
 
-                            </div>
+<div
+class="inline-flex items-center gap-2
+px-3 py-1.5 rounded-full
+border border-brand-500/20
+bg-brand-500/10
+text-brand-400
+text-xs font-mono uppercase tracking-widest">
 
-                        </div>
-                    </div>
+<span
+class="w-1.5 h-1.5 rounded-full
+bg-brand-400 animate-pulse">
+</span>
 
-                </div>
+BNB Technology Group UK
 
-            </div>
-        </section>
+</div>
 
 
-        <!-- =====================================================
-             LEGAL / TERMS & PRIVACY
-        ====================================================== -->
-        <section id="legal"
-                 class="py-24 bg-slate-950 border-b border-slate-800/80">
+<h1
+class="mt-7 text-4xl sm:text-6xl lg:text-7xl
+font-black tracking-tight text-white
+leading-tight">
 
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+Technology that
+<span class="text-brand-400">
+keeps you connected.
+</span>
 
-                <p class="text-brand-400 font-mono text-xs uppercase tracking-widest">
-                    Legal
-                </p>
+</h1>
 
-                <h2 class="mt-2 text-3xl sm:text-4xl font-black text-white">
-                    Terms & Privacy
-                </h2>
 
-                <p class="mt-3 text-slate-500">
-                    Service terms, privacy information, and customer data disclosures.
-                </p>
+<p
+class="mt-6 max-w-2xl mx-auto
+text-lg sm:text-xl
+text-slate-400 leading-relaxed">
 
-                <button
-                    type="button"
-                    onclick="openLegalModal()"
-                    class="mt-8 inline-flex items-center justify-center
-                           px-7 py-3.5 rounded-xl
-                           font-semibold text-slate-950
-                           bg-brand-400 hover:bg-brand-500
-                           transition shadow-lg shadow-brand-500/10">
+BNB Tech builds practical technology services,
+including cellular and internet connectivity
+through our Zapnix brand.
 
-                    View Terms & Privacy
+</p>
 
-                </button>
 
-            </div>
-        </section>
+<div
+class="mt-10 flex flex-col sm:flex-row
+justify-center gap-4">
 
+<a
+href="#services"
+class="px-7 py-3.5 rounded-xl
+font-semibold text-slate-950
+bg-brand-400 hover:bg-brand-500
+transition shadow-lg
+shadow-brand-500/10">
 
-        <!-- =====================================================
-             SUPPORT
-        ====================================================== -->
-        <section id="support"
-                 class="py-24 bg-slate-900/40">
+Explore Zapnix
 
-            <div class="max-w-3xl mx-auto
-                        px-4 sm:px-6 lg:px-8
-                        text-center">
+</a>
 
-                <p class="text-brand-400 font-mono text-xs
-                          uppercase tracking-widest">
-                    Support
-                </p>
 
-                <h2 class="mt-3 text-3xl sm:text-4xl
-                           font-black text-white">
-                    Need assistance?
-                </h2>
+<a
+href="#trial"
+class="px-7 py-3.5 rounded-xl
+font-semibold text-slate-300
+bg-slate-900 hover:bg-slate-800
+border border-slate-700
+transition">
 
-                <p class="mt-4 text-slate-400 text-lg">
-                    Contact the Zapnix support team by email.
-                </p>
+Start Free Trial
 
-                <a href="mailto:Zapnix@att.net?subject=Zapnix%20Support%20Inquiry"
-                   class="inline-flex items-center
-                          justify-center
-                          mt-8 px-8 py-4
-                          rounded-xl
-                          font-bold
-                          text-slate-950
-                          bg-brand-400
-                          hover:bg-brand-500
-                          transition
-                          shadow-lg
-                          shadow-brand-500/10">
+</a>
 
-                    Email Zapnix Support
+</div>
 
-                </a>
+</div>
 
-                <p class="mt-4 text-xs
-                          text-slate-600 font-mono">
-                    Zapnix@att.net
-                </p>
+</section>
 
-            </div>
 
-        </section>
 
-    </main>
+<!-- =========================================================
+SERVICES
+========================================================== -->
 
+<section
+id="services"
+class="py-24 border-b border-slate-800/80">
 
-    <!-- =========================================================
-         FOOTER
-    ========================================================== -->
-    <footer class="border-t border-slate-800
-                   bg-slate-950 py-10">
+<div
+class="max-w-7xl mx-auto
+px-4 sm:px-6 lg:px-8">
 
-        <div class="max-w-7xl mx-auto
-                    px-4 sm:px-6 lg:px-8">
 
-            <div class="flex flex-col sm:flex-row
-                        justify-between items-center
-                        gap-6">
+<div class="mb-12">
 
-                <div class="text-center sm:text-left">
+<p
+class="text-brand-400 font-mono text-xs
+uppercase tracking-widest">
 
-                    <a href="#home"
-                       class="text-xl font-black text-white">
+Zapnix
 
-                        bnb<span class="text-brand-400">tech</span><span
-                            class="text-slate-600 font-mono">.uk</span>
+</p>
 
-                    </a>
 
-                    <p class="mt-2 text-xs text-slate-600">
-                        © 2026 BNB Technology Group UK.
-                    </p>
+<h2
+class="mt-2 text-3xl sm:text-4xl
+font-black text-white">
 
-                </div>
+Cellular & Internet
 
+</h2>
 
-                <div class="flex items-center gap-6
-                            text-xs text-slate-500">
 
-                    <a href="#services"
-                       class="hover:text-slate-300 transition">
-                        Services
-                    </a>
+<p
+class="mt-4 max-w-2xl
+text-slate-400 text-lg">
 
-                    <button
-                       type="button"
-                       onclick="openLegalModal()"
-                       class="hover:text-slate-300 transition">
-                        Terms & Privacy
-                    </button>
+Flexible connectivity without unnecessary
+complexity.
 
-                    <a href="#support"
-                       class="hover:text-slate-300 transition">
-                        Support
-                    </a>
+</p>
 
-                </div>
+</div>
 
-            </div>
 
-        </div>
 
-    </footer>
+<!-- =====================================================
+PLAN GRID
+====================================================== -->
 
+<div class="grid lg:grid-cols-3 gap-6">
 
-    <!-- =====================================================
-         LEGAL MODAL
-    ====================================================== -->
-    <div id="legalModal"
-         class="fixed inset-0 z-[100] hidden items-center justify-center
-                p-4 sm:p-6">
 
-        <!-- Dark backdrop -->
-        <div
-            onclick="closeLegalModal()"
-            class="absolute inset-0 bg-black/75 backdrop-blur-sm">
-        </div>
-
-
-        <!-- Modal box -->
-        <div id="legalModalBox"
-             class="relative z-10 w-full max-w-4xl
-                    max-h-[90vh]
-                    overflow-hidden
-                    rounded-2xl
-                    border border-slate-700
-                    bg-slate-950
-                    shadow-2xl
-                    opacity-0 scale-95
-                    transition-all duration-300">
-
-            <!-- Modal header -->
-            <div class="sticky top-0 z-20
-                        flex items-center justify-between
-                        gap-4
-                        px-6 py-4
-                        border-b border-slate-800
-                        bg-slate-950/95
-                        backdrop-blur-md">
-
-                <div>
-                    <p class="text-brand-400 font-mono text-xs
-                              uppercase tracking-widest">
-                        Legal Document
-                    </p>
-
-                    <h2 class="text-lg sm:text-xl font-bold text-white">
-                        Terms & Privacy
-                    </h2>
-                </div>
-
-
-                <!-- Close button -->
-                <button
-                    type="button"
-                    onclick="closeLegalModal()"
-                    aria-label="Close Terms and Privacy"
-                    class="flex items-center justify-center
-                           w-9 h-9 rounded-lg
-                           text-slate-400
-                           hover:text-white
-                           hover:bg-slate-800
-                           transition">
-
-                    <span class="text-2xl leading-none">&times;</span>
-
-                </button>
-
-            </div>
-
-
-            <!-- Scrollable legal content -->
-            <div class="overflow-y-auto max-h-[calc(90vh-80px)]
-                        px-6 sm:px-10 py-8
-                        text-sm text-slate-300
-                        leading-relaxed">
-
-                <p class="font-medium text-slate-200">
-                    Welcome to Zapnix Communications (“Zapnix,” “we,” “us,”
-                    or “our”), a US subsidiary of BNB Technology Group UK.
-                    These Mobile Hotspot Terms of Service (“Terms”) govern
-                    your access to and use of our on-demand mobile hotspot
-                    connection services (the “Service”).
-                </p>
-
-                <p class="mt-5 font-medium text-slate-200">
-                    By purchasing, activating, or using the Service, you agree
-                    to be bound by these Terms. If you do not agree, do not
-                    access or use the Service.
-                </p>
-
-
-                <!-- SECTION 1 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        1. Service Description, Speeds & Network Coverage
-                    </h3>
-
-                    <p class="mb-3">
-                        <strong>1.1 Service Overview:</strong>
-                        Zapnix provides on-demand wireless mobile hotspot
-                        connectivity to authorized end users within supported
-                        coverage areas in the United States.
-                    </p>
-
-                    <p class="mb-3">
-                        <strong>1.2 Underlying Carrier:</strong>
-                        The wireless network utilized to provide the Service
-                        is powered by our backend provider, Visible by Verizon.
-                        Zapnix does not own or operate the physical cell towers
-                        or network infrastructure. Coverage and service
-                        availability are entirely dependent on the underlying
-                        carrier network footprint.
-                    </p>
-
-                    <p class="mb-3">
-                        <strong>1.3 Bandwidth & Unlimited Data Disclosure:</strong>
-                        The Service offers unlimited total data usage per
-                        active billing cycle. However, maximum download and
-                        upload speeds are hard-capped at 5 Megabits per second
-                        (5 Mbps).
-                    </p>
-
-                    <p>
-                        <strong>1.4 Best-Effort Delivery:</strong>
-                        Actual speeds may vary based on user location, device
-                        capabilities, network congestion, terrain, weather,
-                        or underlying carrier handoffs. Zapnix and its
-                        underlying carrier do not guarantee unbroken,
-                        error-free, or constant 5 Mbps throughput.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 2 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        2. Pricing, Billing & Automatic Renewal
-                    </h3>
-
-                    <p class="mb-3">
-                        <strong>2.1 Subscription Rate:</strong>
-                        The Service is billed on an on-demand monthly basis
-                        at $1.00 USD per user/device, plus applicable federal,
-                        state, or local taxes and regulatory fees.
-                    </p>
-
-                    <p class="mb-3">
-                        <strong>2.2 Automatic Recurring Billing:</strong>
-                        Unless explicitly purchased as a single non-renewing
-                        pass, your payment method will automatically be
-                        charged $1.00 USD every 30 days until canceled.
-                    </p>
-
-                    <p>
-                        <strong>2.3 Cancellation & Refunds:</strong>
-                        You may cancel your subscription at any time via your
-                        Zapnix online account portal or by contacting customer
-                        support. Cancellations take effect at the end of the
-                        current billing period. Payments are non-refundable,
-                        and partial-month credits are not issued unless
-                        required by applicable law.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 3 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        3. Acceptable Use Policy
-                    </h3>
-
-                    <p class="mb-3">
-                        You agree NOT to use the Service:
-                    </p>
-
-                    <ul class="list-disc pl-6 space-y-2 text-slate-400">
-
-                        <li>
-                            For any illegal purpose, including unauthorized
-                            distribution of copyrighted materials.
-                        </li>
-
-                        <li>
-                            To run automated scripts, continuous data
-                            scraping, server hosting, peer-to-peer (P2P)
-                            file sharing/torrenting, or high-volume
-                            automated traffic that disrupts network
-                            performance for other users.
-                        </li>
-
-                        <li>
-                            To resell, sub-license, share, or redistribute
-                            the hotspot connection to unauthorized third
-                            parties outside your household or immediate
-                            device group.
-                        </li>
-
-                        <li>
-                            To bypass, alter, or attempt to reverse-engineer
-                            bandwidth-throttling mechanisms or network
-                            management systems.
-                        </li>
-
-                    </ul>
-
-                    <p class="mt-4">
-                        Zapnix and its underlying carrier reserve the right
-                        to suspend or terminate access without prior notice
-                        if we detect a violation of this Acceptable Use
-                        Policy or network abuse.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 4 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        4. Privacy & Customer Data
-                    </h3>
-
-                    <p class="mb-3">
-                        <strong>4.1 Data Handling:</strong>
-                        Your privacy is important to us. Our collection and
-                        use of personal data are governed by the Zapnix
-                        Privacy Policy and applicable privacy requirements.
-                    </p>
-
-                    <p>
-                        <strong>4.2 CPNI:</strong>
-                        Data concerning your usage of the Service, such as
-                        bandwidth totals or connection timestamps, may be
-                        subject to applicable telecommunications privacy
-                        requirements, including Customer Proprietary Network
-                        Information (CPNI) protections where applicable.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 5 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        5. Disclaimers & Limitation of Liability
-                    </h3>
-
-                    <p class="mb-4 uppercase text-xs tracking-wide">
-                        <strong>
-                            WARRANTY DISCLAIMER:
-                        </strong>
-                        THE SERVICE IS PROVIDED ON AN “AS IS” AND
-                        “AS AVAILABLE” BASIS TO THE MAXIMUM EXTENT
-                        PERMITTED BY APPLICABLE LAW.
-                    </p>
-
-                    <p>
-                        <strong>5.2 Limitation of Liability:</strong>
-                        To the fullest extent permitted by applicable law,
-                        Zapnix and its affiliates shall not be liable for
-                        indirect, incidental, consequential, special, or
-                        punitive damages arising from use of the Service.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 6 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        6. Dispute Resolution
-                    </h3>
-
-                    <p class="mb-3">
-                        <strong>6.1 Mandatory Arbitration:</strong>
-                        Any dispute, controversy, or claim arising out of
-                        or relating to these Terms or the Service shall be
-                        settled by binding arbitration where applicable.
-                    </p>
-
-                    <p class="mb-3">
-                        <strong>6.2 Class Action Waiver:</strong>
-                        Where legally enforceable, claims shall be brought
-                        only in an individual capacity and not as part of a
-                        class or representative proceeding.
-                    </p>
-
-                    <p>
-                        <strong>6.3 Governing Law:</strong>
-                        These Terms shall be governed by the applicable laws
-                        specified by the service agreement.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 7 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        7. Changes to Terms
-                    </h3>
-
-                    <p>
-                        Zapnix reserves the right to modify these Terms.
-                        Notice of material changes will be posted on the
-                        website or provided through appropriate communication
-                        channels where required. Continued use of the Service
-                        following effective changes constitutes acceptance
-                        where legally permitted.
-                    </p>
-
-                </div>
-
-
-                <!-- SECTION 8 -->
-                <div class="mt-10 pt-6 border-t border-slate-800">
-
-                    <h3 class="text-base font-bold text-white mb-3">
-                        8. Contact Information
-                    </h3>
-
-                    <p>
-                        Questions, concerns, or support requests regarding
-                        the Service may be directed to:
-                    </p>
-
-                    <div class="mt-4 space-y-1
-                                text-xs font-mono text-slate-400">
-
-                        <p class="text-white font-semibold">
-                            Zapnix Communications
-                        </p>
-
-                        <p>
-                            A subsidiary of BNB Technology Group UK
-                        </p>
-
-                        <p>
-                            Website: BNBTech.uk
-                        </p>
-
-                        <p>
-                            Email:
-                            <a href="mailto:Zapnix@att.net"
-                               class="text-brand-400 hover:underline">
-                                Zapnix@att.net
-                            </a>
-                        </p>
-
-                        <p>
-                            Phone: +1 (330) 485-3227
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Last updated -->
-                <div class="mt-10 pt-6
-                            border-t border-slate-800
-                            text-xs text-slate-600 font-mono">
-
-                    Last Updated: August 13, 2026
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-- =========================================================
-         JAVASCRIPT HANDLERS
-    ========================================================== -->
-    <script>
-        function openLegalModal() {
-            const modal = document.getElementById("legalModal");
-            const box = document.getElementById("legalModalBox");
-
-            modal.classList.remove("hidden");
-            modal.classList.add("flex");
-
-            // Prevent the background page from scrolling
-            document.body.classList.add("overflow-hidden");
-
-            // Small delay allows the browser to animate the transition
-            requestAnimationFrame(() => {
-                box.classList.remove("opacity-0", "scale-95");
-                box.classList.add("opacity-100", "scale-100");
-            });
-        }
-
-
-        function closeLegalModal() {
-            const modal = document.getElementById("legalModal");
-            const box = document.getElementById("legalModalBox");
-
-            // Animate out
-            box.classList.remove("opacity-100", "scale-100");
-            box.classList.add("opacity-0", "scale-95");
-
-            // Wait for animation before hiding
-            setTimeout(() => {
-                modal.classList.remove("flex");
-                modal.classList.add("hidden");
-
-                document.body.classList.remove("overflow-hidden");
-            }, 300);
-        }
-
-
-        // Allow Escape key to close the modal
-        document.addEventListener("keydown", function(event) {
-            if (event.key === "Escape") {
-                const modal = document.getElementById("legalModal");
-
-                if (!modal.classList.contains("hidden")) {
-                    closeLegalModal();
-                }
-            }
-        });
-    </script>
+<!-- BASIC -->
+
+<div
+class="group relative overflow-hidden
+rounded-3xl
+border border-slate-800
+bg-slate-900/70
+p-7 sm:p-8
+hover:border-brand-500/40
+transition">
+
+<div
+class="absolute -right-24 -top-24
+w-64 h-64
+bg-brand-500/10
+blur-3xl rounded-full
+pointer-events-none">
+</div>
+
+
+<div class="relative z-10">
+
+<div
+class="flex items-center justify-between">
+
+<span
+class="inline-flex items-center
+px-2.5 py-1 rounded-full
+bg-brand-500/10
+border border-brand-500/20
+text-brand-400
+text-xs font-mono uppercase">
+
+Zapnix
+
+</span>
+
+
+<span
+class="text-xs font-mono
+text-slate-500">
+
+BASIC
+
+</span>
+
+</div>
+
+
+<h3
+class="mt-6 text-2xl
+font-black text-white">
+
+Basic
+
+</h3>
+
+
+<p
+class="mt-2 text-slate-400">
+
+Simple everyday cellular connectivity.
+
+</p>
+
+
+<div class="mt-7">
+
+<span
+class="text-4xl font-black text-white">
+
+$`1
+
+</span>
+
+<span
+class="text-slate-500 text-sm">
+
+/ 30 days
+
+</span>
+
+</div>
+
+
+<div class="mt-7 space-y-3">
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+SPEED
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Up to 5 Mbps ↓ / ↑
+
+</div>
+
+</div>
+
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+DATA
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Unlimited
+
+</div>
+
+</div>
+
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+BILLING
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Every 30 days
+
+</div>
+
+</div>
+
+</div>
+
+
+<button
+type="button"
+onclick="openPlanInterest('Basic', '5')"
+class="mt-7 inline-flex w-full
+justify-center px-6 py-3
+rounded-xl font-semibold
+text-slate-950 bg-brand-400
+hover:bg-brand-500 transition">
+
+Get Basic
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- PRO -->
+
+<div
+class="group relative overflow-hidden
+rounded-3xl
+border border-brand-500/30
+bg-slate-900/70
+p-7 sm:p-8
+hover:border-brand-400/60
+transition">
+
+<div
+class="absolute -right-24 -top-24
+w-64 h-64
+bg-brand-500/15
+blur-3xl rounded-full
+pointer-events-none">
+</div>
+
+
+<div class="relative z-10">
+
+<div
+class="flex items-center justify-between">
+
+<span
+class="inline-flex items-center
+px-2.5 py-1 rounded-full
+bg-brand-500/10
+border border-brand-500/20
+text-brand-400
+text-xs font-mono uppercase">
+
+Zapnix
+
+</span>
+
+
+<span
+class="text-xs font-mono
+text-brand-400">
+
+MOST POPULAR
+
+</span>
+
+</div>
+
+
+<h3
+class="mt-6 text-2xl
+font-black text-white">
+
+Pro
+
+</h3>
+
+
+<p
+class="mt-2 text-slate-400">
+
+More speed for demanding everyday use.
+
+</p>
+
+
+<div class="mt-7">
+
+<span
+class="text-4xl font-black text-white">
+
+`$5
+
+</span>
+
+<span
+class="text-slate-500 text-sm">
+
+/ 30 days
+
+</span>
+
+</div>
+
+
+<div class="mt-7 space-y-3">
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+SPEED
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Up to 75 Mbps ↓ / ↑
+
+</div>
+
+</div>
+
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+DATA
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Unlimited
+
+</div>
+
+</div>
+
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+BILLING
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Every 30 days
+
+</div>
+
+</div>
+
+</div>
+
+
+<button
+type="button"
+onclick="openPlanInterest('Pro', '75')"
+class="mt-7 inline-flex w-full
+justify-center px-6 py-3
+rounded-xl font-semibold
+text-slate-950 bg-brand-400
+hover:bg-brand-500 transition">
+
+Get Pro
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- PREMIUM -->
+
+<div
+class="group relative overflow-hidden
+rounded-3xl
+border border-slate-800
+bg-slate-900/70
+p-7 sm:p-8
+hover:border-brand-500/40
+transition">
+
+<div
+class="absolute -right-24 -top-24
+w-64 h-64
+bg-brand-500/10
+blur-3xl rounded-full
+pointer-events-none">
+</div>
+
+
+<div class="relative z-10">
+
+<div
+class="flex items-center justify-between">
+
+<span
+class="inline-flex items-center
+px-2.5 py-1 rounded-full
+bg-brand-500/10
+border border-brand-500/20
+text-brand-400
+text-xs font-mono uppercase">
+
+Zapnix
+
+</span>
+
+
+<span
+class="text-xs font-mono
+text-slate-500">
+
+PREMIUM
+
+</span>
+
+</div>
+
+
+<h3
+class="mt-6 text-2xl
+font-black text-white">
+
+Premium
+
+</h3>
+
+
+<p
+class="mt-2 text-slate-400">
+
+Maximum available performance
+where supported.
+
+</p>
+
+
+<div class="mt-7">
+
+<span
+class="text-4xl font-black text-white">
+
+$`25
+
+</span>
+
+<span
+class="text-slate-500 text-sm">
+
+/ 30 days
+
+</span>
+
+</div>
+
+
+<div class="mt-7 space-y-3">
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+SPEED
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Up to 300+ Mbps ↓ / ↑
+
+</div>
+
+</div>
+
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+NETWORK
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Premium 5G access
+
+</div>
+
+</div>
+
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-950/60 p-4">
+
+<div
+class="text-brand-400
+font-mono text-xs">
+
+DATA
+
+</div>
+
+<div
+class="mt-1 font-semibold">
+
+Unlimited
+
+</div>
+
+</div>
+
+</div>
+
+
+<button
+type="button"
+onclick="openPlanInterest('Premium', '300+')"
+class="mt-7 inline-flex w-full
+justify-center px-6 py-3
+rounded-xl font-semibold
+text-slate-950 bg-brand-400
+hover:bg-brand-500 transition">
+
+Get Premium
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Speed disclaimer -->
+
+<div
+class="mt-8 rounded-2xl
+border border-slate-800
+bg-slate-900/40
+p-5">
+
+<p
+class="text-sm text-slate-500
+leading-relaxed">
+
+<span
+class="text-slate-300 font-semibold">
+
+Network performance:
+
+</span>
+
+Advertised speeds represent maximum service
+capabilities and are not guaranteed. Actual
+performance may vary based on coverage,
+congestion, signal strength, location,
+device capabilities, network conditions,
+and other environmental factors.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+FREE TRIAL
+========================================================== -->
+
+<section
+id="trial"
+class="py-24 border-b border-slate-800/80">
+
+<div
+class="max-w-5xl mx-auto
+px-4 sm:px-6 lg:px-8">
+
+<div
+class="relative overflow-hidden
+rounded-3xl
+border border-brand-500/20
+bg-brand-500/5
+p-8 sm:p-12 text-center">
+
+
+<div
+class="absolute inset-0
+bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]
+from-teal-900/20 via-transparent
+to-transparent
+pointer-events-none">
+</div>
+
+
+<div class="relative z-10">
+
+<p
+class="text-brand-400 font-mono
+text-xs uppercase tracking-widest">
+
+No Payment Required
+
+</p>
+
+
+<h2
+class="mt-3 text-3xl sm:text-4xl
+font-black text-white">
+
+Try Zapnix free for 15 days.
+
+</h2>
+
+
+<p
+class="mt-4 max-w-2xl mx-auto
+text-slate-400 text-lg
+leading-relaxed">
+
+Try an eligible Zapnix service for 15 days
+without providing payment information.
+There is no trial fee and the trial does not
+automatically convert into a paid subscription.
+
+</p>
+
+
+<div
+class="mt-8 flex flex-wrap
+justify-center gap-3">
+
+<div
+class="px-4 py-2 rounded-full
+border border-slate-700
+bg-slate-950/60
+text-sm text-slate-300">
+
+15 days
+
+</div>
+
+
+<div
+class="px-4 py-2 rounded-full
+border border-slate-700
+bg-slate-950/60
+text-sm text-slate-300">
+
+`$0
+
+</div>
+
+
+<div
+class="px-4 py-2 rounded-full
+border border-slate-700
+bg-slate-950/60
+text-sm text-slate-300">
+
+No card required
+
+</div>
+
+
+<div
+class="px-4 py-2 rounded-full
+border border-slate-700
+bg-slate-950/60
+text-sm text-slate-300">
+
+No automatic billing
+
+</div>
+
+</div>
+
+
+<button
+type="button"
+onclick="openTrialInterest()"
+class="mt-9 inline-flex items-center
+justify-center px-8 py-4
+rounded-xl font-bold
+text-slate-950
+bg-brand-400
+hover:bg-brand-500
+transition shadow-lg
+shadow-brand-500/10">
+
+Start My Free Trial
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+LEGAL
+========================================================== -->
+
+<section
+id="legal"
+class="py-24 bg-slate-950
+border-b border-slate-800/80">
+
+<div
+class="max-w-5xl mx-auto
+px-4 sm:px-6 lg:px-8 text-center">
+
+<p
+class="text-brand-400 font-mono
+text-xs uppercase tracking-widest">
+
+Legal
+
+</p>
+
+
+<h2
+class="mt-2 text-3xl sm:text-4xl
+font-black text-white">
+
+Terms & Privacy
+
+</h2>
+
+
+<p
+class="mt-3 text-slate-500">
+
+Information about BNB Tech, Zapnix,
+service terms, privacy, trials,
+and customer rights.
+
+</p>
+
+
+<button
+type="button"
+onclick="openLegalModal()"
+class="mt-8 inline-flex items-center
+justify-center px-7 py-3.5
+rounded-xl font-semibold
+text-slate-950 bg-brand-400
+hover:bg-brand-500 transition
+shadow-lg shadow-brand-500/10">
+
+View Legal Information
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+SUPPORT
+========================================================== -->
+
+<section
+id="support"
+class="py-24 bg-slate-900/40">
+
+<div
+class="max-w-3xl mx-auto
+px-4 sm:px-6 lg:px-8
+text-center">
+
+<p
+class="text-brand-400 font-mono
+text-xs uppercase tracking-widest">
+
+Support
+
+</p>
+
+
+<h2
+class="mt-3 text-3xl sm:text-4xl
+font-black text-white">
+
+Need assistance?
+
+</h2>
+
+
+<p
+class="mt-4 text-slate-400 text-lg">
+
+Contact the Zapnix support team by email.
+
+</p>
+
+
+<button
+type="button"
+onclick="openSupportModal()"
+class="inline-flex items-center
+justify-center mt-8 px-8 py-4
+rounded-xl font-bold
+text-slate-950
+bg-brand-400
+hover:bg-brand-500
+transition shadow-lg
+shadow-brand-500/10">
+
+Contact Support
+
+</button>
+
+
+<p
+class="mt-4 text-xs
+text-slate-600 font-mono">
+
+Zapnix@att.net
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+FOOTER
+========================================================== -->
+
+<footer
+class="border-t border-slate-800
+bg-slate-950 py-10">
+
+<div
+class="max-w-7xl mx-auto
+px-4 sm:px-6 lg:px-8">
+
+<div
+class="flex flex-col sm:flex-row
+justify-between items-center
+gap-6">
+
+
+<div
+class="text-center sm:text-left">
+
+<a
+href="#home"
+class="text-xl font-black text-white">
+
+bnb<span class="text-brand-400">tech</span><span
+class="text-slate-600 font-mono">.uk</span>
+
+</a>
+
+
+<p
+class="mt-2 text-xs text-slate-600">
+
+© 2026 BNB Technology Group UK.
+
+</p>
+
+
+<p
+class="mt-1 text-xs text-slate-700">
+
+Zapnix is the cellular and internet
+connectivity brand of BNB Tech.
+
+</p>
+
+</div>
+
+
+<div
+class="flex flex-wrap
+justify-center items-center gap-6
+text-xs text-slate-500">
+
+<a
+href="#services"
+class="hover:text-slate-300 transition">
+
+Services
+
+</a>
+
+
+<a
+href="#trial"
+class="hover:text-slate-300 transition">
+
+Free Trial
+
+</a>
+
+
+<button
+type="button"
+onclick="openLegalModal()"
+class="hover:text-slate-300 transition">
+
+Legal
+
+</button>
+
+
+<button
+type="button"
+onclick="openSupportModal()"
+class="hover:text-slate-300 transition">
+
+Support
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================================================
+PLAN INTEREST MODAL
+========================================================== -->
+
+<div
+id="interestModal"
+class="fixed inset-0 z-[110] hidden
+items-center justify-center
+p-4 sm:p-6"
+role="dialog"
+aria-modal="true"
+aria-labelledby="interestModalTitle">
+
+
+<div
+onclick="closeInterestModal()"
+class="absolute inset-0
+bg-black/75 backdrop-blur-sm">
+</div>
+
+
+<div
+id="interestModalBox"
+class="relative z-10 w-full max-w-xl
+max-h-[90vh]
+overflow-y-auto
+rounded-2xl
+border border-slate-700
+bg-slate-950
+opacity-0 scale-95
+transition-all duration-300">
+
+
+<!-- Header -->
+
+<div
+class="sticky top-0 z-20
+flex items-center justify-between
+gap-4 px-6 py-4
+border-b border-slate-800
+bg-slate-950">
+
+<div>
+
+<h3
+id="interestModalTitle"
+class="text-lg font-bold text-white">
+
+Plan Interest
+
+</h3>
+
+
+<p
+id="interestModalSubtitle"
+class="text-xs text-slate-500 mt-1">
+
+Nothing is charged by submitting this form.
+
+</p>
+
+</div>
+
+
+<button
+type="button"
+onclick="closeInterestModal()"
+aria-label="Close"
+class="p-2 text-slate-400
+hover:text-white transition">
+
+✕
+
+</button>
+
+</div>
+
+
+
+<!-- Form -->
+
+<form
+id="interestForm"
+onsubmit="submitInterest(event)"
+class="p-6 space-y-5">
+
+
+<!-- Name -->
+
+<div>
+
+<label
+for="customerName"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Name
+
+</label>
+
+
+<input
+id="customerName"
+type="text"
+required
+autocomplete="name"
+placeholder="Your name"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition">
+
+</div>
+
+
+
+<!-- Email -->
+
+<div>
+
+<label
+for="customerEmail"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Email address
+
+</label>
+
+
+<input
+id="customerEmail"
+type="email"
+required
+autocomplete="email"
+placeholder="you@example.com"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition">
+
+</div>
+
+
+
+<!-- Phone -->
+
+<div>
+
+<label
+for="customerPhone"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Phone number
+
+<span class="text-slate-600">
+(optional)
+</span>
+
+</label>
+
+
+<input
+id="customerPhone"
+type="tel"
+autocomplete="tel"
+placeholder="Your phone number"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition">
+
+</div>
+
+
+
+<!-- Account status -->
+
+<div>
+
+<label
+for="accountStatus"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Account status
+
+</label>
+
+
+<select
+id="accountStatus"
+required
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+outline-none
+focus:border-brand-400">
+
+<option value="">
+Select one
+</option>
+
+<option value="Making a new account">
+Making a new account
+</option>
+
+<option value="Adding a line to my current plan">
+Adding a line to my current plan
+</option>
+
+</select>
+
+</div>
+
+
+
+<!-- Payment -->
+
+<div id="paymentSection">
+
+<label
+for="paymentMethod"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Preferred payment method
+
+</label>
+
+
+<select
+id="paymentMethod"
+required
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+outline-none
+focus:border-brand-400">
+
+<option value="">
+Select one
+</option>
+
+<option value="Cash">
+Cash
+</option>
+
+<option value="Card">
+Card
+</option>
+
+<option value="Check">
+Check
+</option>
+
+<option value="Credit/Debit Card">
+Credit/Debit Card
+</option>
+
+<option value="Prepaid Gift Card">
+Prepaid Gift Card
+</option>
+
+</select>
+
+</div>
+
+
+
+<!-- Notes -->
+
+<div>
+
+<label
+for="customerNotes"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Additional notes
+
+<span class="text-slate-600">
+(optional)
+</span>
+
+</label>
+
+
+<textarea
+id="customerNotes"
+rows="4"
+placeholder="Anything else you'd like us to know?"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition"></textarea>
+
+</div>
+
+
+
+<!-- Disclaimer -->
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-900/50
+p-4">
+
+<p
+id="interestDisclaimer"
+class="text-xs text-slate-500
+leading-relaxed">
+
+This email is an expression of interest only.
+No payment is being made by submitting this
+form. You can change your mind or select a
+different plan before making any payment.
+
+</p>
+
+</div>
+
+
+
+<button
+type="submit"
+class="w-full inline-flex
+justify-center items-center
+px-6 py-3.5 rounded-xl
+font-semibold
+text-slate-950
+bg-brand-400
+hover:bg-brand-500
+transition">
+
+Continue to Email
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================================================
+SUPPORT MODAL
+========================================================== -->
+
+<div
+id="supportModal"
+class="fixed inset-0 z-[110] hidden
+items-center justify-center
+p-4 sm:p-6"
+role="dialog"
+aria-modal="true"
+aria-labelledby="supportModalTitle">
+
+
+<div
+onclick="closeSupportModal()"
+class="absolute inset-0
+bg-black/75 backdrop-blur-sm">
+</div>
+
+
+<div
+id="supportModalBox"
+class="relative z-10 w-full max-w-xl
+max-h-[90vh]
+overflow-y-auto
+rounded-2xl
+border border-slate-700
+bg-slate-950
+opacity-0 scale-95
+transition-all duration-300">
+
+
+<div
+class="sticky top-0 z-20
+flex items-center justify-between
+gap-4 px-6 py-4
+border-b border-slate-800
+bg-slate-950">
+
+<div>
+
+<h3
+id="supportModalTitle"
+class="text-lg font-bold text-white">
+
+Zapnix Support
+
+</h3>
+
+
+<p
+class="text-xs text-slate-500 mt-1">
+
+We'll help you through email.
+
+</p>
+
+</div>
+
+
+<button
+type="button"
+onclick="closeSupportModal()"
+aria-label="Close"
+class="p-2 text-slate-400
+hover:text-white transition">
+
+✕
+
+</button>
+
+</div>
+
+
+
+<form
+onsubmit="submitSupport(event)"
+class="p-6 space-y-5">
+
+
+<!-- Name -->
+
+<div>
+
+<label
+for="supportName"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Name
+
+</label>
+
+
+<input
+id="supportName"
+type="text"
+required
+autocomplete="name"
+placeholder="Your name"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition">
+
+</div>
+
+
+
+<!-- Email -->
+
+<div>
+
+<label
+for="supportEmail"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Email address
+
+</label>
+
+
+<input
+id="supportEmail"
+type="email"
+required
+autocomplete="email"
+placeholder="you@example.com"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition">
+
+</div>
+
+
+
+<!-- Phone -->
+
+<div>
+
+<label
+for="supportPhone"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Phone number
+
+<span class="text-slate-600">
+(optional)
+</span>
+
+</label>
+
+
+<input
+id="supportPhone"
+type="tel"
+autocomplete="tel"
+placeholder="Your phone number"
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition">
+
+</div>
+
+
+
+<!-- Existing customer -->
+
+<div>
+
+<label
+for="supportCustomer"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Are you an existing customer?
+
+</label>
+
+
+<select
+id="supportCustomer"
+required
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+outline-none
+focus:border-brand-400">
+
+<option value="">
+Select one
+</option>
+
+<option value="Yes">
+Yes
+</option>
+
+<option value="No">
+No
+</option>
+
+</select>
+
+</div>
+
+
+
+<!-- Account issue -->
+
+<div>
+
+<label
+for="supportAccountIssue"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+Is this related to an account?
+
+</label>
+
+
+<select
+id="supportAccountIssue"
+required
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+outline-none
+focus:border-brand-400">
+
+<option value="">
+Select one
+</option>
+
+<option value="Yes">
+Yes
+</option>
+
+<option value="No">
+No
+</option>
+
+</select>
+
+</div>
+
+
+
+<!-- Issue -->
+
+<div>
+
+<label
+for="supportMessage"
+class="block text-sm font-medium
+text-slate-300 mb-2">
+
+How can we help?
+
+</label>
+
+
+<textarea
+id="supportMessage"
+rows="5"
+required
+placeholder="Describe the issue or request..."
+class="w-full rounded-xl
+border border-slate-700
+bg-slate-900
+px-4 py-3
+text-white
+placeholder:text-slate-600
+outline-none
+focus:border-brand-400
+transition"></textarea>
+
+</div>
+
+
+
+<!-- Security notice -->
+
+<div
+class="rounded-xl
+border border-slate-800
+bg-slate-900/50
+p-4">
+
+<p
+class="text-xs text-slate-500
+leading-relaxed">
+
+For account-related requests, BNB Tech may
+require identity or account verification before
+providing account information or making
+account changes. Please do not include
+passwords, payment card numbers, or other
+sensitive credentials in this email.
+
+</p>
+
+</div>
+
+
+
+<button
+type="submit"
+class="w-full inline-flex
+justify-center items-center
+px-6 py-3.5 rounded-xl
+font-semibold
+text-slate-950
+bg-brand-400
+hover:bg-brand-500
+transition">
+
+Continue to Email
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================================================
+LEGAL MODAL
+========================================================== -->
+
+<div
+id="legalModal"
+class="fixed inset-0 z-[100] hidden
+items-center justify-center
+p-4 sm:p-6"
+role="dialog"
+aria-modal="true"
+aria-labelledby="legalModalTitle">
+
+
+<div
+onclick="closeLegalModal()"
+class="absolute inset-0
+bg-black/75 backdrop-blur-sm">
+</div>
+
+
+<div
+id="legalModalBox"
+class="relative z-10 w-full max-w-4xl
+max-h-[90vh]
+overflow-hidden
+rounded-2xl
+border border-slate-700
+bg-slate-950
+opacity-0 scale-95
+transition-all duration-300">
+
+
+<!-- Header -->
+
+<div
+class="sticky top-0 z-20
+flex items-center justify-between
+gap-4 px-6 py-4
+border-b border-slate-800
+bg-slate-950">
+
+<h3
+id="legalModalTitle"
+class="text-lg font-bold text-white">
+
+Legal Information
+
+</h3>
+
+
+<button
+type="button"
+onclick="closeLegalModal()"
+aria-label="Close"
+class="p-2 text-slate-400
+hover:text-white transition">
+
+✕
+
+</button>
+
+</div>
+
+
+
+<!-- Legal body -->
+
+<div
+class="p-6 overflow-y-auto
+max-h-[calc(90vh-80px)]
+space-y-8
+text-sm text-slate-300">
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+1. Business Information
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+BNB Technology Group UK, also known as
+BNB Tech, is the technology business behind
+Zapnix. Zapnix provides cellular and internet
+connectivity services.
+
+</p>
+
+
+<p
+class="mt-3 text-slate-500
+leading-relaxed">
+
+Zapnix is a registered trademark of BNB Technology Inovations Group UK
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+2. Zapnix Services
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Zapnix offers connectivity plans with
+different advertised speed capabilities.
+Available service depends on coverage,
+device compatibility, network conditions,
+and other technical factors.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+3. Network Performance
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Advertised speeds are maximum service
+capabilities and are not guaranteed.
+Actual speeds may vary depending on
+coverage, congestion, signal strength,
+location, device capabilities, network
+conditions, and other environmental factors.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+4. 15-Day Free Trial
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Eligible customers may receive a 15-day
+trial without providing payment information.
+The trial has no trial fee and does not
+automatically convert into a paid subscription.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+5. Billing & Subscriptions
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Paid Zapnix plans are offered on a
+30-day service period. The applicable price,
+renewal terms, cancellation requirements,
+and any applicable taxes or charges will be
+presented to customers before purchase.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+6. Privacy
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+BNB Tech respects customer privacy.
+Personal information may be processed as
+necessary to provide services, manage
+accounts, communicate with customers,
+prevent abuse, maintain security, process
+transactions, and comply with legal
+obligations.
+
+</p>
+
+
+<p
+class="mt-3 text-slate-500
+leading-relaxed">
+
+For more information feel free to contact us.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+7. Cellular & Network Information
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Cellular services may involve the processing
+of technical and network information by BNB
+Tech, Zapnix, and applicable connectivity
+providers or service partners as necessary
+to provide, maintain, secure, and support
+the service.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+8. Acceptable Use
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Customers must use Zapnix services in
+compliance with applicable laws and the
+service's Acceptable Use Policy.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+9. Suspension & Termination
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+Service may be suspended or terminated where
+permitted by the applicable service terms,
+including circumstances involving abuse,
+fraud, unlawful activity, non-payment, or
+requirements imposed by a network or service
+provider.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h4
+class="text-base font-semibold
+text-white mb-2">
+
+10. Governing Law
+
+</h4>
+
+
+<p
+class="text-slate-400 leading-relaxed">
+
+BNB Technology Group UK is based in the
+United Kingdom. The final Terms of Service
+will specify the applicable UK jurisdiction
+and governing law, while preserving any
+mandatory consumer rights that apply.
+
+</p>
+
+</section>
+
+
+
+<section
+class="rounded-xl
+border border-slate-800
+bg-slate-900/40 p-5">
+
+<p
+class="text-xs text-slate-500
+leading-relaxed">
+
+<strong class="text-slate-300">
+Legal notice:
+</strong>
+
+This website provides general service
+information and is a nonsubstitute for
+final contractual Terms of Service,
+Privacy Policy, Acceptable Use Policy,
+cancellation terms, or other legally
+required notices.
+
+</p>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================================================
+JAVASCRIPT
+========================================================== -->
+
+<script>
+
+/* =========================================================
+GLOBAL STATE
+========================================================== */
+
+let selectedPlan = null;
+let selectedSpeed = null;
+let isTrial = false;
+
+
+/* =========================================================
+HELPER
+========================================================== */
+
+function showModal(modalId, boxId) {
+
+const modal = document.getElementById(modalId);
+const box = document.getElementById(boxId);
+
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+
+document.body.classList.add('overflow-hidden');
+
+requestAnimationFrame(() => {
+
+box.classList.remove(
+'opacity-0',
+'scale-95'
+);
+
+box.classList.add(
+'opacity-100',
+'scale-100'
+);
+
+});
+
+}
+
+
+function hideModal(modalId, boxId) {
+
+const modal = document.getElementById(modalId);
+const box = document.getElementById(boxId);
+
+box.classList.remove(
+'opacity-100',
+'scale-100'
+);
+
+box.classList.add(
+'opacity-0',
+'scale-95'
+);
+
+setTimeout(() => {
+
+modal.classList.remove('flex');
+modal.classList.add('hidden');
+
+document.body.classList.remove('overflow-hidden');
+
+}, 300);
+
+}
+
+
+/* =========================================================
+PLAN INTEREST
+========================================================== */
+
+function openPlanInterest(plan, speed) {
+
+selectedPlan = plan;
+selectedSpeed = speed;
+isTrial = false;
+
+document.getElementById(
+'interestModalTitle'
+).textContent = plan + ' Plan Interest';
+
+
+document.getElementById(
+'interestModalSubtitle'
+).textContent =
+'Nothing is charged by submitting this form.';
+
+
+document.getElementById(
+'paymentSection'
+).classList.remove('hidden');
+
+
+document.getElementById(
+'paymentMethod'
+).required = true;
+
+
+document.getElementById(
+'interestDisclaimer'
+).textContent =
+'This email is an expression of interest only. ' +
+'No payment is being made by submitting this form. ' +
+'You can change your mind or select a different plan ' +
+'before making any payment.';
+
+
+showModal(
+'interestModal',
+'interestModalBox'
+);
+
+}
+
+
+/* =========================================================
+TRIAL
+========================================================== */
+
+function openTrialInterest() {
+
+selectedPlan = '15-Day Free Trial';
+selectedSpeed = 'Based on selected trial service';
+isTrial = true;
+
+
+document.getElementById(
+'interestModalTitle'
+).textContent =
+'15-Day Free Trial';
+
+
+document.getElementById(
+'interestModalSubtitle'
+).textContent =
+'No payment information is required.';
+
+
+document.getElementById(
+'paymentSection'
+).classList.add('hidden');
+
+
+document.getElementById(
+'paymentMethod'
+).required = false;
+
+
+document.getElementById(
+'interestDisclaimer'
+).textContent =
+'The 15-day trial requires no payment information, ' +
+'has no trial fee, and does not automatically convert ' +
+'into a paid subscription.';
+
+
+showModal(
+'interestModal',
+'interestModalBox'
+);
+
+}
+
+
+function closeInterestModal() {
+
+hideModal(
+'interestModal',
+'interestModalBox'
+);
+
+}
+
+
+/* =========================================================
+PLAN INTEREST → MAILTO
+========================================================== */
+
+function submitInterest(event) {
+
+event.preventDefault();
+
+
+const name =
+document.getElementById(
+'customerName'
+).value.trim();
+
+
+const email =
+document.getElementById(
+'customerEmail'
+).value.trim();
+
+
+const phone =
+document.getElementById(
+'customerPhone'
+).value.trim();
+
+
+const accountStatus =
+document.getElementById(
+'accountStatus'
+).value;
+
+
+const paymentMethod =
+document.getElementById(
+'paymentMethod'
+).value;
+
+
+const notes =
+document.getElementById(
+'customerNotes'
+).value.trim();
+
+
+let subject;
+let body;
+
+
+if (!isTrial) {
+
+subject =
+selectedPlan + ' Plan Interest';
+
+
+body =
+`Hello Zapnix Support,
+
+I am,  {selectedPlan} plan for Hotspot data.
+
+Plan:
+$`{selectedPlan}
+
+Advertised speed:
+Up to `${selectedSpeed} Mbps download/upload
+
+Email:
+$`{email}
+
+Phone number:
+`${phone || 'Not provided'}
+
+Account status:
+$`{accountStatus}
+
+My preferred payment method is:
+`${paymentMethod}
+
+Additional notes:
+$`{notes || 'None'}
+
+I understand that this email is an expression of interest only. I am not making a payment by sending this email, and I can change my mind or select a different plan before making any payment.
+
+Thank you,
+${name};
+
+
+} else {
+
+subject =
+'15-Day Free Trial Interest';
+
+
+body =
+`Hello Zapnix Support,
+
+I am, $`{name}, interested in the 15-day free trial for Zapnix.
+
+Email:
+`${email}
+
+Phone number:
+$`{phone || 'Not provided'}
+
+Account status:
+`${accountStatus}
+
+Trial:
+15-day free trial
+
+Additional notes:
+$`{notes || 'None'}
+
+I understand that the 15-day trial requires no payment information, has no trial fee, and does not automatically convert into a paid subscription.
+
+Thank you,
+${name};
+
+}
+
+
+const mailto =
+'mailto:Zapnix@att.net' +
+'?subject=' +
+encodeURIComponent(subject) +
+'&body=' +
+encodeURIComponent(body);
+
+
+window.location.href = mailto;
+
+}
+
+
+/* =========================================================
+SUPPORT MODAL
+========================================================== */
+
+function openSupportModal() {
+
+showModal(
+'supportModal',
+'supportModalBox'
+);
+
+}
+
+
+function closeSupportModal() {
+
+hideModal(
+'supportModal',
+'supportModalBox'
+);
+
+}
+
+
+/* =========================================================
+SUPPORT → MAILTO
+========================================================== */
+
+function submitSupport(event) {
+
+event.preventDefault();
+
+
+const name =
+document.getElementById(
+'supportName'
+).value.trim();
+
+
+const email =
+document.getElementById(
+'supportEmail'
+).value.trim();
+
+
+const phone =
+document.getElementById(
+'supportPhone'
+).value.trim();
+
+
+const existingCustomer =
+document.getElementById(
+'supportCustomer'
+).value;
+
+
+const accountIssue =
+document.getElementById(
+'supportAccountIssue'
+).value;
+
+
+const message =
+document.getElementById(
+'supportMessage'
+).value.trim();
+
+
+const subject =
+'Zapnix Support Request';
+
+
+const body =
+`Hello Zapnix Support,
+
+I need assistance with a Zapnix service.
+
+Name:
+$`{name}
+
+Email:
+`${email}
+
+Phone number:
+$`{phone || 'Not provided'}
+
+Existing customer:
+`${existingCustomer}
+
+Account-related request:
+$`{accountIssue}
+
+Issue / request:
+`${message}
+
+I understand that account information or account changes may require identity or account verification before they can be completed.
+
+I have not included any passwords, payment card numbers, or other sensitive credentials in this email.
+
+Thank you,
+${name}`;
+
+
+const mailto =
+'mailto:Zapnix@att.net' +
+'?subject=' +
+encodeURIComponent(subject) +
+'&body=' +
+encodeURIComponent(body);
+
+
+window.location.href = mailto;
+
+}
+
+
+/* =========================================================
+LEGAL MODAL
+========================================================== */
+
+function openLegalModal() {
+
+showModal(
+'legalModal',
+'legalModalBox'
+);
+
+}
+
+
+function closeLegalModal() {
+
+hideModal(
+'legalModal',
+'legalModalBox'
+);
+
+}
+
+
+/* =========================================================
+ESCAPE KEY
+========================================================== */
+
+document.addEventListener(
+'keydown',
+function(event) {
+
+if (event.key === 'Escape') {
+
+closeInterestModal();
+closeSupportModal();
+closeLegalModal();
+
+}
+
+}
+);
+
+
+/* =========================================================
+MODAL CLICK PROTECTION
+========================================================== */
+
+document
+.getElementById('interestModalBox')
+.addEventListener(
+'click',
+function(event) {
+event.stopPropagation();
+}
+);
+
+
+document
+.getElementById('supportModalBox')
+.addEventListener(
+'click',
+function(event) {
+event.stopPropagation();
+}
+);
+
+
+document
+.getElementById('legalModalBox')
+.addEventListener(
+'click',
+function(event) {
+event.stopPropagation();
+}
+);
+
+</script>
 
 </body>
 </html>
